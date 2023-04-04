@@ -26,7 +26,7 @@ class RecUpdateController extends Controller
         DB::update('update contactus set subject = ? where id = ?',[$subject,$id]);
         DB::update('update contactus set message = ? where id = ?',[$message,$id]);
        
-        return redirect('/edit-records')->with('updatemessage','Record Updated Successfully!');
+        return redirect('/edit-records')->with('message','Record Updated Successfully!');
 
      }
 }

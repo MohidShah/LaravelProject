@@ -27,9 +27,7 @@
   @if(session('message'))
   <div class="alert alert-success">{{session('message')}}</div>
   @endif
-  @if(session('message'))
-  <div class="alert alert-success">{{session('updatemessage')}}</div>
-  @endif
+  
   <table class="table table-bordered">        
   <table class="table table-dark table-hover">
     <thead>
