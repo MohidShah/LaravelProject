@@ -13,7 +13,7 @@ class RecdeleteController extends Controller
      public function destroy($id) {
         
         DB::table('contactus')->where('id', $id)->delete();
-        return redirect('/edit-records')->with('message',' Record Updated Successfully!');
+        return redirect('/edit-records')->with('success',' Record deleted Successfully!');
      //   return redirect()->back()->with('message', 'Record Deleted Successfully!');
     }
 }

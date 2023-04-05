@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @section('title', 'Update Records Page')
+    <style>
+      .frm{
+margin-left= 30%;
+
+      }
+    </style>
 </head>
    <body>
    @extends('commonlayouts.header')
     
    @section('content')
-   <div class="row" style="margin:10px;">
-        <div class="col-md-3">
+
 <br><br><br><br>
-      <form action = "/edit/<?php echo $users[0]->id; ?>" method = "post">
+      <form action = "/edit/<?php echo $users[0]->id; ?>" method = "post" class="frm" >
          <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
       
          <table>

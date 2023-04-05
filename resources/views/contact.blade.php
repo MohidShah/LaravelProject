@@ -37,7 +37,6 @@
                               <div class="form-group">
                                 <strong><label>Name:</label> </strong>
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                                
                               </div>
                             </div>
                             <div class="col-md-12 mb-3">
